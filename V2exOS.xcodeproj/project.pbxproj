@@ -427,6 +427,7 @@
 			knownRegions = (
 				en,
 				"zh-Hans",
+				Base,
 			);
 			mainGroup = 0D033B19288CD64500129C9B;
 			packageReferences = (
@@ -750,7 +751,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"V2exOSiOS/Preview Content\"";
-				DEVELOPMENT_TEAM = S4XH6LVQ6A;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = V2exOSiOS/Info.plist;
@@ -785,7 +786,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"V2exOSiOS/Preview Content\"";
-				DEVELOPMENT_TEAM = S4XH6LVQ6A;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = V2exOSiOS/Info.plist;
