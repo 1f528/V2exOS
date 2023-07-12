@@ -76,6 +76,7 @@ struct ProfileView: View {
                         Text("请前往 v2ex.com/settings/tokens 生成")
                     }
                     .padding()
+                    #if !os(iOS)
                     .onHover { inside in
                         if inside {
                             NSCursor.pointingHand.push()
@@ -83,6 +84,8 @@ struct ProfileView: View {
                             NSCursor.pop()
                         }
                     }
+                    #else
+                    #endif
                 }
                 
                 if isSaveTokenLoading {

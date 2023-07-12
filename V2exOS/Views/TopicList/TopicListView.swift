@@ -27,7 +27,6 @@ struct TopicListView: View {
                 if let topics = topics {
                     ForEach(topics) { topic in
                         #if os(iOS)
-                        
                         Button {
                             selectTopic = topic
                         } label: {
@@ -97,7 +96,7 @@ struct TopicListView: View {
                 .frame(width: 20, height: 20)
                 .mask(RoundedRectangle(cornerRadius: 8))
         }
-        .sheet(item: $selectTopic) { topic in
+        .sheet(item: $selectTopic){ topic in
             TopicDetailView(topic: topic)
         }
     }

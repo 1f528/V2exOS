@@ -73,6 +73,8 @@
 		0DD2A4DE2987C57B0018C2CF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2A4DC2987C57B0018C2CF /* Constants.swift */; };
 		0DF3300E28A55DEA00AEF312 /* InboxListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF3300D28A55DEA00AEF312 /* InboxListView.swift */; };
 		0DF3301028A56A3600AEF312 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF3300F28A56A3600AEF312 /* StringExt.swift */; };
+		198E9FE42A5EFB80002CF9E9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA3F3A028A40ACF00E7224D /* ProfileView.swift */; };
+		198E9FE52A5EFB80002CF9E9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA3F3A028A40ACF00E7224D /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -201,10 +203,7 @@
 		0D033B3C288D0FEC00129C9B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0D033B3D288D0FF700129C9B /* SidebarView.swift */,
-				0DA3F3A028A40ACF00E7224D /* ProfileView.swift */,
-				0DF3300D28A55DEA00AEF312 /* InboxListView.swift */,
-				0D40378B28E6E4EA00B1A341 /* SettingsView.swift */,
+				198E9FE22A5EFAF3002CF9E9 /* Profile */,
 				0DF9130528E49D2F00A2CDEC /* TopicList */,
 				0DF9130428E49D2000A2CDEC /* TopicDetail */,
 				0D139DE328E7E0BD00E4CF88 /* Components */,
@@ -222,6 +221,10 @@
 		0D139DE328E7E0BD00E4CF88 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0D033B3D288D0FF700129C9B /* SidebarView.swift */,
+				0D40378B28E6E4EA00B1A341 /* SettingsView.swift */,
+				0DF3300D28A55DEA00AEF312 /* InboxListView.swift */,
+				0DA3F3A028A40ACF00E7224D /* ProfileView.swift */,
 				0D139DE128E7E06C00E4CF88 /* UserName.swift */,
 			);
 			path = Components;
@@ -325,6 +328,13 @@
 				0D8F334F288D1F8800C27AF1 /* TopicListCellView.swift */,
 			);
 			path = TopicList;
+			sourceTree = "<group>";
+		};
+		198E9FE22A5EFAF3002CF9E9 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -517,6 +527,7 @@
 				0D2334EF29969A3B00DF4B73 /* TimeFormat.swift in Sources */,
 				0D2334EB299699AB00DF4B73 /* TopicDetailView.swift in Sources */,
 				0D2334EE299699DD00DF4B73 /* UserName.swift in Sources */,
+				198E9FE52A5EFB80002CF9E9 /* ProfileView.swift in Sources */,
 				0D5555FB2997B6B100A8B9FD /* ViewExt.swift in Sources */,
 				0D5555FC2997C1C500A8B9FD /* CurrentUserStore.swift in Sources */,
 				0D2334F129969A6B00DF4B73 /* PreviewData.swift in Sources */,
@@ -538,6 +549,7 @@
 				0DA7FA862987A76B00374B3A /* UserName.swift in Sources */,
 				0DA7FA67298799B300374B3A /* V2exOSTVApp.swift in Sources */,
 				0DA7FA822987A6DB00374B3A /* CommentListView.swift in Sources */,
+				198E9FE42A5EFB80002CF9E9 /* ProfileView.swift in Sources */,
 				0D5555FA2997B6B100A8B9FD /* ViewExt.swift in Sources */,
 				0DA7FA7B29879CA500374B3A /* TimeFormat.swift in Sources */,
 				0DA7FA872987A8C800374B3A /* TopicDetailView.swift in Sources */,
@@ -751,7 +763,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"V2exOSiOS/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7QY5Z3L4LZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = V2exOSiOS/Info.plist;
@@ -768,7 +780,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.isaced.v2exos;
+				PRODUCT_BUNDLE_IDENTIFIER = "-f528.v2exos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -786,7 +798,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"V2exOSiOS/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7QY5Z3L4LZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = V2exOSiOS/Info.plist;
@@ -803,7 +815,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.isaced.v2exos;
+				PRODUCT_BUNDLE_IDENTIFIER = "-f528.v2exos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
