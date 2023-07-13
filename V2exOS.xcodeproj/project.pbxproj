@@ -75,6 +75,10 @@
 		0DF3301028A56A3600AEF312 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF3300F28A56A3600AEF312 /* StringExt.swift */; };
 		198E9FE42A5EFB80002CF9E9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA3F3A028A40ACF00E7224D /* ProfileView.swift */; };
 		198E9FE52A5EFB80002CF9E9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA3F3A028A40ACF00E7224D /* ProfileView.swift */; };
+		198E9FE72A5FC314002CF9E9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E9FE62A5FC314002CF9E9 /* SettingsView.swift */; };
+		198E9FE92A5FC336002CF9E9 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E9FE82A5FC336002CF9E9 /* SearchView.swift */; };
+		198E9FEB2A5FC34D002CF9E9 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E9FEA2A5FC34D002CF9E9 /* AccountView.swift */; };
+		198E9FED2A5FC380002CF9E9 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E9FEC2A5FC380002CF9E9 /* InboxView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,6 +121,10 @@
 		0DD2A4DC2987C57B0018C2CF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0DF3300D28A55DEA00AEF312 /* InboxListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxListView.swift; sourceTree = "<group>"; };
 		0DF3300F28A56A3600AEF312 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		198E9FE62A5FC314002CF9E9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		198E9FE82A5FC336002CF9E9 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		198E9FEA2A5FC34D002CF9E9 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		198E9FEC2A5FC380002CF9E9 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +211,10 @@
 		0D033B3C288D0FEC00129C9B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0D033B3D288D0FF700129C9B /* SidebarView.swift */,
+				0D40378B28E6E4EA00B1A341 /* SettingsView.swift */,
+				0DF3300D28A55DEA00AEF312 /* InboxListView.swift */,
+				0DA3F3A028A40ACF00E7224D /* ProfileView.swift */,
 				198E9FE22A5EFAF3002CF9E9 /* Profile */,
 				0DF9130528E49D2F00A2CDEC /* TopicList */,
 				0DF9130428E49D2000A2CDEC /* TopicDetail */,
@@ -221,10 +233,6 @@
 		0D139DE328E7E0BD00E4CF88 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				0D033B3D288D0FF700129C9B /* SidebarView.swift */,
-				0D40378B28E6E4EA00B1A341 /* SettingsView.swift */,
-				0DF3300D28A55DEA00AEF312 /* InboxListView.swift */,
-				0DA3F3A028A40ACF00E7224D /* ProfileView.swift */,
 				0D139DE128E7E06C00E4CF88 /* UserName.swift */,
 			);
 			path = Components;
@@ -254,7 +262,11 @@
 			isa = PBXGroup;
 			children = (
 				0D2334E12996990700DF4B73 /* HomeView.swift */,
+				198E9FE62A5FC314002CF9E9 /* SettingsView.swift */,
 				0D7EF06E299736C800E77A0C /* NodeListView.swift */,
+				198E9FE82A5FC336002CF9E9 /* SearchView.swift */,
+				198E9FEA2A5FC34D002CF9E9 /* AccountView.swift */,
+				198E9FEC2A5FC380002CF9E9 /* InboxView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -524,15 +536,19 @@
 				0D2334F029969A6400DF4B73 /* Constants.swift in Sources */,
 				0D2334E22996990700DF4B73 /* HomeView.swift in Sources */,
 				0D2334ED299699BC00DF4B73 /* CommentListView.swift in Sources */,
+				198E9FE72A5FC314002CF9E9 /* SettingsView.swift in Sources */,
 				0D2334EF29969A3B00DF4B73 /* TimeFormat.swift in Sources */,
 				0D2334EB299699AB00DF4B73 /* TopicDetailView.swift in Sources */,
 				0D2334EE299699DD00DF4B73 /* UserName.swift in Sources */,
 				198E9FE52A5EFB80002CF9E9 /* ProfileView.swift in Sources */,
+				198E9FE92A5FC336002CF9E9 /* SearchView.swift in Sources */,
 				0D5555FB2997B6B100A8B9FD /* ViewExt.swift in Sources */,
 				0D5555FC2997C1C500A8B9FD /* CurrentUserStore.swift in Sources */,
+				198E9FEB2A5FC34D002CF9E9 /* AccountView.swift in Sources */,
 				0D2334F129969A6B00DF4B73 /* PreviewData.swift in Sources */,
 				0D2334D12996944500DF4B73 /* V2exOSiOSApp.swift in Sources */,
 				0D2334EC299699B000DF4B73 /* AppearanceConfig.swift in Sources */,
+				198E9FED2A5FC380002CF9E9 /* InboxView.swift in Sources */,
 				0D7EF06F299736C800E77A0C /* NodeListView.swift in Sources */,
 				0D2334E42996997000DF4B73 /* TopicListCellView.swift in Sources */,
 			);

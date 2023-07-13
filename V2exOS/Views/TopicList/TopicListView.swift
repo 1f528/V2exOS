@@ -22,45 +22,47 @@ struct TopicListView: View {
     @State var selectTopic: V2Topic? = nil
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
-                if let topics = topics {
-                    ForEach(topics) { topic in
-                        #if os(iOS)
-                        Button {
-                            selectTopic = topic
-                        } label: {
-                            TopicListCellView(topic: topic)
-                        }
-                        #else
-                        NavigationLink {
-                            TopicDetailView(topic: topic)
-                        } label: {
-                            TopicListCellView(topic: topic)
-                        }
-                        #endif
-                    }
-                    
-                    if topics.count > 0 && nodeName != NodeNameAll && nodeName != NodeNameHot {
-                        HStack {
-                            Spacer()
-                            // 已登陆或列表为空时才加载数据（非登陆用户 API 限制只能取第一页）
-                            if currentUser.user != nil || topics.isEmpty {
-                                ProgressView()
-                                    .onAppear {
-                                        Task {
-                                            await self.loadData(page: self.page + 1)
-                                        }
-                                    }
-                            } else {
-                                #if os(macOS)
-                                Text("登录后可查看更多内容")
-                                    .font(.footnote)
-                                    .foregroundColor(.secondary)
-                                    .padding(20)
-                                #endif
+                Section() {
+                    if let topics = topics {
+                        ForEach(topics) { topic in
+                            //#if os(iOS)
+                            //Button {
+                            //    selectTopic = topic
+                            //} label: {
+                            //    TopicListCellView(topic: topic)
+                            //}
+                            //#else
+                            NavigationLink {
+                                TopicDetailView(topic: topic)
+                            } label: {
+                                TopicListCellView(topic: topic)
                             }
-                            Spacer()
+                            //#endif
+                        }
+                        
+                        if topics.count > 0 && nodeName != NodeNameAll && nodeName != NodeNameHot {
+                            HStack {
+                                Spacer()
+                                // 已登陆或列表为空时才加载数据（非登陆用户 API 限制只能取第一页）
+                                if currentUser.user != nil || topics.isEmpty {
+                                    ProgressView()
+                                        .onAppear {
+                                            Task {
+                                                await self.loadData(page: self.page + 1)
+                                            }
+                                        }
+                                } else {
+                                    #if os(macOS)
+                                    Text("登录后可查看更多内容")
+                                        .font(.footnote)
+                                        .foregroundColor(.secondary)
+                                        .padding(20)
+                                    #endif
+                                }
+                                Spacer()
+                            }
                         }
                     }
                 }
@@ -82,7 +84,7 @@ struct TopicListView: View {
         }
         #if os(iOS)
         .navigationTitle(_node?.title ?? "")
-        .navigationViewStyle(.stack)
+        //.navigationViewStyle(.stack) deprecated
         .navigationBarTitleDisplayMode(.inline)
         #endif
         #if os(macOS)
@@ -96,9 +98,9 @@ struct TopicListView: View {
                 .frame(width: 20, height: 20)
                 .mask(RoundedRectangle(cornerRadius: 8))
         }
-        .sheet(item: $selectTopic){ topic in
-            TopicDetailView(topic: topic)
-        }
+        //.sheet(item: $selectTopic){ topic in
+        //    TopicDetailView(topic: topic)
+        //}
     }
     
     func loadData(page: Int = 1) async {
